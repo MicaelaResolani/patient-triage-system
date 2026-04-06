@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f7;
+  margin: 0;
+}
+
+/* CONTENEDOR */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* TITULOS */
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* FORM */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* INPUTS */
+input,
+textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* CHECKBOX */
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+/* SLIDER */
+input[type="range"] {
+  width: 100%;
+}
+
+/* LABELS */
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* BOTON */
+button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* RESUMEN */
+#resumen {
+  margin: 20px 0;
+  padding: 12px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* LISTA */
+#listaPacientes {
+  margin-top: 20px;
+}
+
+/* TARJETAS */
+.paciente {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* PRIORIDAD */
+.urgente {
+  border-left: 6px solid #e74c3c;
+}
+
+.moderado {
+  border-left: 6px solid #f39c12;
+}
+
+.leve {
+  border-left: 6px solid #2ecc71;
+}
+
+/* ALERTA */
+.alerta {
+  color: red;
+  font-weight: bold;
+}
+
+/* PARPADEO */
+@keyframes parpadeo {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.critico {
+  animation: parpadeo 1s infinite;
+}
+
+input,
+textarea,
+button {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
