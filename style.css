@@ -137,3 +137,8 @@ button {
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
+
+.paciente.atendido {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
