@@ -66,12 +66,6 @@ Este proyecto busca:
 
 ---
 
-## 📸 Demo
-
-*(Podés agregar acá una captura o link a GitHub Pages)*
-
----
-
 ## 👩‍💻 Autor
 
 Desarrollado por Micaela Resolani  
