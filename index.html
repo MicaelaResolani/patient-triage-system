@@ -1,57 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Triage Inteligente</title>
-
-  <link rel="stylesheet" href="style.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MED-TECH PRO | Professional Triage Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark-mode">
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="logo">MED-TECH<span>PRO</span></div>
+            <nav>
+                <div class="nav-item active">Guardia Activa</div>
+                <div class="nav-item">Imprimir Reporte</div>
+                <div class="nav-item">Estadísticas EWS</div>
+            </nav>
+            <div class="stats-container">
+                <div class="stat-card">Espera: <span id="count-espera">0</span></div>
+            </div>
+        </aside>
 
-<div class="container">
+        <main class="content">
+            <header class="top-bar glass-effect">
+                <div class="buscador-container">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="buscador" placeholder="Buscar paciente por nombre o ID...">
+                </div>
+                <div class="system-time JetBrains-Mono" id="clock">00:00:00</div>
+            </header>
 
-  <h1>Triage Inteligente</h1>
+            <div class="grid-layout">
+                <section class="form-section">
+                    <form id="formPaciente" class="card form-card">
+                        <h3>Ingreso Crítico</h3>
+                        
+                        <div class="input-row">
+                            <input type="text" id="nombre" placeholder="Nombre Completo" required>
+                            <input type="number" id="edad" placeholder="Edad" required>
+                        </div>
+                        
+                        <div class="clinical-input">
+                            <label>Dolor (EVA): <span id="valorDolor">0</span></label>
+                            <input type="range" id="dolor" min="0" max="10" value="0">
+                        </div>
 
-  <div id="resumen"></div>
+                        <div class="check-grid">
+                            <label class="custom-check">
+                                <input type="checkbox" id="signosAlarma">
+                                <span class="checkmark"></span> Signos de Alarma
+                            </label>
+                            <label class="custom-check">
+                                <input type="checkbox" id="inmunodeprimido">
+                                <span class="checkmark"></span> Inmuno/Oncológico
+                            </label>
+                        </div>
 
-  <form id="formPaciente">
-    <h2>Ingreso de Pacientes</h2>
+                        <textarea id="sintomas" placeholder="Observaciones clínicas relevantes..."></textarea>
+                        
+                        <button type="submit" class="btn-primary">CLASIFICAR PACIENTE</button>
+                    </form>
+                </section>
 
-    <input type="text" id="nombre" placeholder="Nombre" required>
-    <input type="number" id="edad" placeholder="Edad" required>
-    <textarea id="sintomas" placeholder="Síntomas"></textarea>
-
-    <label>
-      <input type="checkbox" id="inmunodeprimido">
-      Paciente inmunodeprimido / oncológico
-    </label>
-
-    <label>
-      Nivel de dolor: <span id="valorDolor">0</span>
-      <input type="range" id="dolor" min="0" max="10" value="0">
-    </label>
-
-    <label>
-      <input type="checkbox" id="signosAlarma">
-      Signos de alarma
-    </label>
-
-    <button type="submit">Evaluar paciente</button>
-  </form>
-
-  <h2>Pacientes en espera</h2>
-
-  <div class="buscador-container">
-    <input type="text" id="buscador" placeholder="🔍 Buscar paciente">
-  </div>
-
-  <div id="listaPacientes"></div>
-
-</div>
-
-<script src="script.js" defer></script>
-
+                <section class="list-section">
+                    <div class="list-header card glass-effect">
+                        <h3>Prioridad de Atención <span class="dynamic-badge">Dinámica</span></h3>
+                    </div>
+                    <div id="listaPacientes" class="clinical-list">
+                        </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
