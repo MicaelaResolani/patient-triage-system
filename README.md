@@ -1,78 +1,55 @@
-# 🏥 Triage Inteligente
+# 🩺 MED-TECH PRO | Sistema de Triage Inteligente
 
-Sistema web de triage clínico desarrollado como proyecto personal, enfocado en la gestión de pacientes en entornos de atención primaria o guardia.
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![JS Vanilla](https://img.shields.io/badge/JavaScript-Vanilla-yellow.svg)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+[![CSS3](https://img.shields.io/badge/CSS3-Modern-blue.svg)](https://developer.mozilla.org/es/docs/Web/CSS)
 
-El objetivo es simular la toma de decisiones médicas básicas y la priorización de pacientes según criterios clínicos simples.
+> **MVP (Producto Mínimo Viable)** diseñado para optimizar el flujo de pacientes en guardias de emergencia. Un puente estratégico entre la gestión de datos clínicos y el desarrollo frontend profesional.
 
----
-
-## 🚀 Funcionalidades
-
-- 🧍 Registro de pacientes
-- ⚠️ Clasificación automática de prioridad:
-  - 🔴 Urgente
-  - 🟡 Moderado
-  - 🟢 Leve
-- ⏱️ Seguimiento del tiempo de espera
-- ✔️ Marcar paciente como atendido
-- 📤 Derivar pacientes con:
-  - destino
-  - motivo clínico
-- 🗑️ Eliminación de pacientes (solo atendidos)
-- 🔍 Búsqueda por nombre
-- 💾 Persistencia de datos con LocalStorage
+### 🚀 [Ver Demo en Vivo](https://micaelaresolani.github.io/patient-triage-system/)
 
 ---
 
-## 🧠 Lógica de priorización
+## 📖 Descripción y Visión
+Este proyecto nace de la intersección entre mi formación en **Enfermería** y mi camino como **Desarrolladora Frontend**. Detecté que muchas interfaces de triage actuales fallan en la usabilidad bajo presión; por eso, diseñé una herramienta que aplica una **lógica de priorización ponderada** basada en estándares reales como el Proceso de Atención de Enfermería (PAE).
 
-La prioridad se calcula automáticamente según:
-
-- Signos de alarma → **Urgente**
-- Dolor ≥ 8 → **Urgente**
-- Inmunodeprimido → **Moderado**
-- Dolor ≥ 4 → **Moderado**
-- Caso contrario → **Leve**
+El sistema no solo registra datos, sino que asiste al profesional en la toma de decisiones críticas mediante una jerarquía visual clara y automatizada.
 
 ---
 
-## 🏗️ Tecnologías utilizadas
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- LocalStorage
-
----
-
-## 🎯 Objetivo del proyecto
-
-Este proyecto busca:
-
-- Aplicar lógica de negocio inspirada en sistemas de salud reales
-- Simular flujos clínicos básicos (espera → atención → derivación)
-- Practicar manipulación del DOM y manejo de estados
-- Construir una base para futuros sistemas más complejos (FHIR, APIs, etc.)
+## ✨ Características de Alto Impacto
+* **Algoritmo de Priorización**: Clasificación automática (Urgente, Moderado, Leve) evaluando la escala EVA, signos de alarma y antecedentes oncológicos en tiempo real.
+* **Gestión de Ciclo de Vida**: Flujo completo del paciente: Ingreso ➡️ Clasificación ➡️ Atención ➡️ Egreso/Derivación.
+* **UX de Grado Médico**: Interfaz en modo oscuro diseñada para reducir la fatiga visual y alertas dinámicas para pacientes con tiempo de espera excedido.
+* **Persistencia Robusta**: Implementación de `LocalStorage` para garantizar la integridad de los datos ante cierres inesperados del navegador.
 
 ---
 
-## 🧩 Posibles mejoras
-
-- Integración con APIs (HL7 / FHIR)
-- Backend con base de datos real
-- Autenticación de usuarios (profesionales de salud)
-- Dashboard avanzado tipo hospital
-- Exportación de datos clínicos
+## 🛠️ Stack Tecnológico
+* **HTML5 Semántico**: Estructura accesible y optimizada para la organización de datos.
+* **CSS3 Moderno**: Arquitectura basada en **CSS Grid** y **Flexbox** para un layout responsivo de nivel profesional.
+* **JavaScript (ES6+)**: Lógica pura, manejo de arrays, filtrado dinámico y manipulación avanzada del DOM.
 
 ---
 
-## 👩‍💻 Autor
-
-Desarrollado por Micaela Resolani  
-Estudiante de Enfermería + Desarrollo
+## 🧠 Desafíos Técnicos Resueltos
+* **Normalización de Búsqueda**: Implementación de lógica *case-insensitive* para asegurar que la localización de pacientes sea infalible en entornos de alto estrés.
+* **Arquitectura Escalable**: Código organizado de manera modular, facilitando una futura migración a **React**.
+* **Jerarquía de Prioridades**: Algoritmo de ordenamiento que asegura que los pacientes críticos siempre encabecen la lista de atención de forma dinámica.
 
 ---
 
-## 💡 Nota
+## 📈 Roadmap (Próximas Actualizaciones)
+- [ ] **Migración a React**: Refactorización de componentes para mejorar la escalabilidad y el estado global.
+- [ ] **Módulo de Alertas Sonoras**: Notificaciones auditivas para pacientes que superen el tiempo de espera crítico.
+- [ ] **Exportación PDF**: Generación de fichas clínicas de atención listas para impresión o archivo legal.
 
-Este sistema es una simulación educativa y no debe ser utilizado en entornos clínicos reales.
+---
+
+## 👩‍💻 Sobre la Autora
+**Micaela Resolani** — Combinando la precisión de la **Enfermería** con la innovación del **Desarrollo Frontend**. Mi objetivo es construir herramientas tecnológicas que optimicen el sistema de salud y mejoren la experiencia tanto del paciente como del profesional.
+
+---
+
+## 💡 Nota Importante
+Este sistema es una simulación con fines educativos y de demostración técnica. No debe ser utilizado para la toma de decisiones en entornos clínicos reales sin la debida certificación y validación médica.
