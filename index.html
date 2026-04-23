@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Triage Inteligente</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Triage Inteligente</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="container">
 
-<h1>Triage Inteligente</h1> 
-<div id="resumen"></div>
+  <h1>Triage Inteligente</h1>
 
-<form id="formPaciente">
+  <div id="resumen"></div>
+
+  <form id="formPaciente">
     <h2>Ingreso de Pacientes</h2>
 
     <input type="text" id="nombre" placeholder="Nombre" required>
@@ -20,33 +24,34 @@
     <textarea id="sintomas" placeholder="Síntomas"></textarea>
 
     <label>
-    <input type="checkbox" id="inmunodeprimido">
-    Paciente inmunodeprimido / oncológico
+      <input type="checkbox" id="inmunodeprimido">
+      Paciente inmunodeprimido / oncológico
     </label>
 
     <label>
-    Nivel de dolor: <span id="valorDolor">0</span>
-    <input type="range" id="dolor" min="0" max="10" value="0">
+      Nivel de dolor: <span id="valorDolor">0</span>
+      <input type="range" id="dolor" min="0" max="10" value="0">
     </label>
 
     <label>
-    <input type="checkbox" id="signosAlarma">
-    Signos de alarma
+      <input type="checkbox" id="signosAlarma">
+      Signos de alarma
     </label>
 
     <button type="submit">Evaluar paciente</button>
-</form>
+  </form>
 
-<h2>Pacientes en espera</h2>
+  <h2>Pacientes en espera</h2>
 
-<div class="buscador-container">
-<input type="text" id="buscador" placeholder="🔍 Buscar paciente por nombre">
-</div>
+  <div class="buscador-container">
+    <input type="text" id="buscador" placeholder="🔍 Buscar paciente">
+  </div>
 
-<div id="listaPacientes"></div>
+  <div id="listaPacientes"></div>
 
 </div>
 
 <script src="script.js" defer></script>
+
 </body>
 </html>
