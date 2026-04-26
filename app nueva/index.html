@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MED-TECH PRO | Gestión de Triage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="logo">MED-TECH<span>PRO</span></div>
+            <nav>
+                <div class="nav-item active">Guardia Activa</div>
+                <div class="nav-item" onclick="window.print()">Imprimir Reporte</div>
+            </nav>
+            <div class="stats-container">
+                <div class="stat-card">En espera: <span id="count-espera">0</span></div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header class="top-bar glass-effect">
+                <div class="buscador-container">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="buscador" placeholder="Buscar paciente...">
+                </div>
+                <div class="system-time JetBrains-Mono" id="clock">00:00:00</div>
+            </header>
+
+            <div class="grid-layout">
+                <section class="form-section">
+                    <form id="formPaciente" class="card form-card">
+                        <h3>Registro de Ingreso</h3>
+                        
+                        <div class="input-row">
+                            <input type="text" id="nombre" placeholder="Nombre Completo" required>
+                            <input type="number" id="edad" placeholder="Edad" required>
+                        </div>
+                        
+                        <div class="clinical-input">
+                            <label>Dolor (EVA): <span id="valorDolor">0</span></label>
+                            <input type="range" id="dolor" min="0" max="10" value="0">
+                        </div>
+
+                        <div class="check-grid">
+                            <label class="custom-check">
+                                <input type="checkbox" id="signosAlarma">
+                                <span class="checkmark"></span> Signos de Alarma
+                            </label>
+                            <label class="custom-check">
+                                <input type="checkbox" id="inmunodeprimido">
+                                <span class="checkmark"></span> Inmuno/Oncológico
+                            </label>
+                        </div>
+
+                        <div class="input-row">
+                            <input type="text" id="areaDerivacion" placeholder="Área de Pase (Ej: Internación, UTI, Rayos)">
+                        </div>
+
+                        <textarea id="sintomas" placeholder="Observaciones en ingreso (clínica inicial)..."></textarea>
+                        <textarea id="motivoDerivacion" placeholder="Motivo del pase / derivación..." style="margin-top: 10px; border-color: rgba(47,129,247,0.3);"></textarea>
+                        
+                        <button type="submit" class="btn-primary">CLASIFICAR E INGRESAR</button>
+                    </form>
+                </section>
+
+                <section class="list-section">
+                    <div class="list-header card glass-effect">
+                        <h3>Prioridad de Atención <span class="dynamic-badge">Dinámica</span></h3>
+                    </div>
+                    <div id="listaPacientes" class="clinical-list"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
