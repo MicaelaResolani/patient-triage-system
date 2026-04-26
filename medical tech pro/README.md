@@ -1,45 +1,46 @@
-# 🩺 MEDICAL TECH PRO | Portal Institucional B2B
+# 🩺 MEDICAL PORTFOLIO | Micaela Resolani
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![JS Vanilla](https://img.shields.io/badge/JavaScript-Vanilla-yellow.svg)](https://developer.mozilla.org/es/docs/Web/JavaScript)
-[![Medical Standards](https://img.shields.io/badge/Standards-ANMAT%20/%20FDA-green.svg)](#)
-
-> **Solución Digital Enterprise** diseñada para la gestión de suministros y equipamiento médico de alta complejidad. Un puente tecnológico entre la ingeniería biomédica y la eficiencia administrativa hospitalaria.
-
-### 🚀 [Explorar Catálogo en Vivo](https://micaelaresolani.github.io/patient-triage-system/)
+> **Soluciones Digitales para el Sector Salud.** Este repositorio centraliza proyectos de ingeniería frontend aplicados a la gestión hospitalaria y tecnología médica de alta complejidad.
 
 ---
 
-## 📖 Visión del Proyecto
-Este portal fue desarrollado para optimizar los procesos de adquisición en instituciones de salud. A diferencia de un e-commerce convencional, **Medical Tech Pro** implementa una lógica de **Cotización Formal (B2B)**, permitiendo a los directores médicos y jefes de compras generar presupuestos técnicos con validez institucional en tiempo real.
+## 🚀 Proyectos en Vivo
+
+Seleccione el portal que desea inspeccionar:
+
+1.  **[PORTAL MEDICAL TECH PRO](https://micaelaresolani.github.io/patient-triage-system/medical-tech-pro/)**
+    * *Catálogo Institucional B2B con lógica de presupuestación técnica y gestión de insumos.*
+2.  **[SISTEMA DE TRIAGE INSTITUCIONAL](https://micaelaresolani.github.io/patient-triage-system/triage/)**
+    * *Interfaz de clasificación de pacientes basada en protocolos de urgencia.*
 
 ---
 
-## ✨ Características de Alto Impacto (Nivel Empresarial)
-* **Gestión de Activos Críticos**: Fichas técnicas dinámicas para equipos de quirófano y unidades de cuidados intensivos.
-* **Lógica de Cross-Selling Médico**: El sistema identifica automáticamente los insumos descartables necesarios para cada equipo (ej. cánulas para torres de laparoscopía), asegurando pedidos completos.
-* **Arquitectura de Presupuesto**: Motor de cálculo que genera montos finales con desglose técnico, listo para ser procesado por departamentos de tesorería.
-* **Interfaz de Grado Médico**: Diseño UI/UX en modo oscuro (High Contrast) diseñado para reducir la fatiga visual en entornos hospitalarios.
+## 🛠️ Detalle Técnico: Medical Tech Pro
+
+Este portal fue diseñado para optimizar los procesos de adquisición en instituciones de salud, implementando una lógica de **Cotización Formal**.
+
+### ✨ Características Clave:
+* **Fichas Técnicas Dinámicas**: Especificaciones de grado médico (Certificaciones ANMAT/FDA).
+* **Lógica de Cross-Selling**: Sugerencia automática de insumos descartables según el equipo seleccionado.
+* **UI de Alto Contraste**: Diseñada para entornos hospitalarios, reduciendo la fatiga visual.
 
 ---
 
-## 🛠️ Stack Tecnológico & Arquitectura
-* **Frontend**: HTML5 Semántico y CSS3 con metodología de **Custom Properties** (Variables) para una identidad de marca consistente.
-* **Lógica de Negocio**: JavaScript (ES6+) con persistencia de datos y manipulación dinámica del DOM para una experiencia Single Page Application (SPA).
-* **Escalabilidad**: Estructura de archivos separada (Separation of Concerns) preparada para una migración limpia a **React.js**.
+## 🛠️ Detalle Técnico: Sistema de Triage
 
----
+Prototipo funcional para la categorización de pacientes en servicios de emergencias.
 
-## 🧠 Soluciones a Problemas del Sector
-* **Reducción de Errores Administrativos**: El carrito valida que no se soliciten equipos sin sus accesorios base.
-* **Normalización de Datos**: Implementación de formatos de moneda localizados y estandarización de especificaciones técnicas según normativas vigentes.
+### ✨ Características Clave:
+* **Algoritmo de Clasificación**: Priorización visual según la gravedad del cuadro clínico.
+* **Interfaz Limpia**: Optimizada para la toma de decisiones rápida bajo presión asistencial.
 
 ---
 
 ## 👩‍💻 Sobre la Autora
-**Micaela Resolani** — Desarrolladora Frontend con enfoque en **Tecnología Médica**. Combinando la precisión de la enfermería con la innovación del software para construir las herramientas que el sistema de salud del futuro necesita.
+**Micaela Resolani** — Desarrolladora Frontend & Profesional de la Salud. 
+Combinando la precisión de la enfermería con la innovación del software para construir las herramientas que el sistema de salud del futuro necesita.
 
 ---
 
-## 💡 Nota Técnica
-Este sistema es una demostración técnica de arquitectura frontend. No sustituye sistemas de gestión hospitalaria (HIS) certificados.
+## 💡 Nota de Configuración
+*Los proyectos se encuentran organizados en subdirectorios para mantener la modularidad y facilitar la escalabilidad a React.js.*
