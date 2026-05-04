@@ -4,15 +4,14 @@
 
 ---
 
-## 🚀 Proyectos en Vivo
+### 🚀 Proyectos en Vivo
 
 Seleccione el portal que desea inspeccionar:
 
-1.  **[PORTAL MEDICAL TECH PRO](https://micaelaresolani.github.io/patient-triage-system/medical-tech-pro/)**
-    * *Catálogo Institucional B2B con lógica de presupuestación técnica y gestión de insumos.*
-2.  **[SISTEMA DE TRIAGE INSTITUCIONAL](https://micaelaresolani.github.io/patient-triage-system/triage/)**
-    * *Interfaz de clasificación de pacientes basada en protocolos de urgencia.*
-
+1. **[PORTAL MEDICAL TECH PRO](https://micaelaresolani.github.io/patient-triage-system/medical%20tech%20pro/index.html)**
+   * Catálogo Institucional B2B con lógica de presupuestación técnica y gestión de insumos.
+2. **[SISTEMA DE TRIAGE INSTITUCIONAL](https://micaelaresolani.github.io/patient-triage-system/app%20nueva/index.html)**
+   * Interfaz de clasificación de pacientes basada en protocolos de urgencia.
 ---
 
 ## 🛠️ Detalle Técnico: Medical Tech Pro
