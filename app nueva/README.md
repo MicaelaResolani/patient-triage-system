@@ -1,45 +1,32 @@
-# 🩺 MEDICAL PORTFOLIO | Micaela Resolani
+# 🚑 MED-TECH PRO | Gestión de Triage
 
-> **Soluciones Digitales para el Sector Salud.** Este repositorio centraliza proyectos de ingeniería frontend aplicados a la gestión hospitalaria y tecnología médica de alta complejidad.
+Sistema de registro y priorización de pacientes para guardia, basado en protocolos reales de enfermería.
 
----
+🔗 **[Ver demo en vivo](https://micaelaresolani.github.io/patient-triage-system/app%20nueva/index.html)**
 
-### 🚀 Proyectos en Vivo
+## Tecnologías
 
-Seleccione el portal que desea inspeccionar:
+`HTML5` · `CSS3` · `JavaScript`
 
-1. **[PORTAL MEDICAL TECH PRO](https://micaelaresolani.github.io/patient-triage-system/medical%20tech%20pro/index.html)**
-   * Catálogo Institucional B2B con lógica de presupuestación técnica y gestión de insumos.
-2. **[SISTEMA DE TRIAGE INSTITUCIONAL](https://micaelaresolani.github.io/patient-triage-system/app%20nueva/index.html)**
-   * Interfaz de clasificación de pacientes basada en protocolos de urgencia.
----
+## Características
 
-## 🛠️ Detalle Técnico: Medical Tech Pro
+- **Panel de guardia activa**: contador de pacientes en espera y cronómetro en vivo
+- **Registro de ingreso clínico**: incluye escala EVA de dolor (0-10), signos de alarma y condición inmuno/oncológica como factores de riesgo
+- **Clasificación dinámica**: ordena automáticamente a los pacientes por prioridad de atención según los datos ingresados
+- **Reporte imprimible**: genera un resumen de guardia listo para imprimir
 
-Este portal fue diseñado para optimizar los procesos de adquisición en instituciones de salud, implementando una lógica de **Cotización Formal**.
+## Cómo ejecutar localmente
 
-### ✨ Características Clave:
-* **Fichas Técnicas Dinámicas**: Especificaciones de grado médico (Certificaciones ANMAT/FDA).
-* **Lógica de Cross-Selling**: Sugerencia automática de insumos descartables según el equipo seleccionado.
-* **UI de Alto Contraste**: Diseñada para entornos hospitalarios, reduciendo la fatiga visual.
+```bash
+git clone https://github.com/MicaelaResolani/patient-triage-system.git
+cd "patient-triage-system/app nueva"
+# Abrir index.html en el navegador
+```
 
----
+## Próximas mejoras
 
-## 🛠️ Detalle Técnico: Sistema de Triage
-
-Prototipo funcional para la categorización de pacientes en servicios de emergencias.
-
-### ✨ Características Clave:
-* **Algoritmo de Clasificación**: Priorización visual según la gravedad del cuadro clínico.
-* **Interfaz Limpia**: Optimizada para la toma de decisiones rápida bajo presión asistencial.
+- Migración a React.js
+- Persistencia de datos con backend
 
 ---
-
-## 👩‍💻 Sobre la Autora
-**Micaela Resolani** — Desarrolladora Frontend & Profesional de la Salud. 
-Combinando la precisión de la enfermería con la innovación del software para construir las herramientas que el sistema de salud del futuro necesita.
-
----
-
-## 💡 Nota de Configuración
-*Los proyectos se encuentran organizados en subdirectorios para mantener la modularidad y facilitar la escalabilidad a React.js.*
+⬅️ [Volver al portfolio principal](../README.md)
